@@ -8,13 +8,13 @@ if(isset($_POST['btn-cadastrar'])):
 	$sobrenome = mysqli_escape_string($connect, $_POST['sobrenome']);
 	$idade = mysqli_escape_string($connect, $_POST['idade']);
 	$email = mysqli_escape_string($connect, $_POST['email']);
-
-	$sql = "INSERT INTO cliente(nome, sobrenome, idade, email) VALUES ($nome, $sobrenome, $idade, $email)";
+	
+	$sql = "INSERT INTO cliente(nome, sobrenome, idade, email) VALUES ('$nome', '$sobrenome', '$idade', '$email')";
 
 	if(mysqli_query($connect, $sql)):
-		header('Location: index.php?sucesso');
+		header('Location: ../index.php?sucesso');
 	else:
-		header('Location: index.php?erro');
+		header('Location: ../index.php?erro');
 	endif;
 endif;
 
