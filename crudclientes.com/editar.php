@@ -16,7 +16,7 @@ endif;
 <div class="row">
 	<div class="col s12 m6 push-m3">
 		<h3 class="light"> Editar Cliente </h3>
-		<form action="php_action/update.php" method="POST">
+		<form id="form_add_cliente" action="php_action/update.php" method="POST">
 			<input type="hidden" name="id" value="<?php echo $dados['id']; ?>">
 			<div class="input-field col s12">
 				<input type="text" name="nome" id="nome" value="<?php echo $dados['nome']; ?>">
@@ -38,7 +38,7 @@ endif;
 				<label for="email">E-mail</label>
 			</div>
 
-			<button type="submit" name="btn-editar" class="btn"> Atualizar </button>
+			<button type="submit" name="btn-editar" class="btn" onclick="return validar();"> Atualizar </button>
 			<a href="index.php" class="btn green"> Lista de Clientes </a>
 		</form>
 	</div>

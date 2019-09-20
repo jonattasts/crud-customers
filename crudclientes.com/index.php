@@ -73,16 +73,16 @@ include_once 'includes/message.php';
 
 
 
-				?>
+					?>
 
-			</tbody>
-		</table>
-		<br>
-		<a href="adicionar.php" class="btn">Cadastrar Cliente</a>
+				</tbody>
+			</table>
+			<br>
+			<a href="adicionar.php" class="btn">Cadastrar Cliente</a>
+		</div>
 	</div>
-</div>
 
-<?php
+	<?php
 //Footer
-include_once 'includes/footer.php';
-?>
+	include_once 'includes/footer.php';
+	?>
